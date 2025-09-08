@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝗧𝗘𝗝𝗔𝗦 𝗧𝗛𝗔𝗞𝗨𝗥™ 🏆</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        /* Name Animation */
+        .animated-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            animation: fade-in-out 2s infinite;
+        }
+
+        @keyframes fade-in-out {
+            0%, 100% {
+                
+                transform: scale(1);
+            }
+            50% {
+               
+                transform: scale(1.1);
+            }
+        }
+
+        /* Countdown Loader Animation */
+        .loader {
+            width: 40px;
+            height: 40px;
+            border: 4px solid transparent;
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Background Overlay */
+        .minabox::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        /* Responsive Typography */
+        .responsive-text {
+            font-size: calc(1rem + 1vw);
+        }
+    </style>
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat bg-[url('back.jpg')] text-white flex items-center justify-center min-h-screen minabox">
+
+    <div class="text-center p-8 rounded-xl shadow-lg w-full max-w-lg">
+        <div class="grid place-items-center">
+        <img src="logo.jpg" alt="" class="w-20 h-20 border border-white">
+    </div>
+        <h2 class="text-xl font-bold mb-4 mt-2 font-serif responsive-text">BIGGEST TIPPER OF TELEGRAM</h2>
+        <h1 class="text-4xl font-bold mb-6" style="text-shadow: 1px 1px rgb(251, 190, 8);">𝗧𝗘𝗝𝗔𝗦 𝗧𝗛𝗔𝗞𝗨𝗥™ 🏆</h1>
+
+        <p class="text-lg mt-3 font-serif">Free joining ends in <span id="countdown" class="countdown text-green-400 text-3xl font-bold font-sans">30</span> seconds</p>
+
+        <!-- Buttons -->
+      <a href="https://t.me/+DpgqqPRujl5lOWY1">
+          <button  class="animated-button animated-name py-3 px-4 bg-blue-500 rounded-sm text-lg my-6 hover:bg-blue-600 transition-all duration-200 border-b-8 border-red-600">
+            <i class="fab fa-telegram mr-2"></i> <span> JOIN 𝗧𝗘𝗝𝗔𝗦 𝗧𝗛𝗔𝗞𝗨𝗥™ TELEGRAM</span>
+        </button>
+        </a>
+
+        <!-- Additional Info -->
+        <h3 class="text-lg mb-3 font-serif font-bold">⚡ IPL/BBL/PSL/T20 PASSED ⚡</h3>
+        <h3 class="text-lg mb-3 font-serif font-bold">✔️ TOSS/MATCH/SESSION ✔️</h3>
+        <h3 class="text-lg mb-6 font-serif font-bold">🤝 BIGGEST TIPPER  🤝</h3>
+        <b class="text-center ">🔍 Cricket Analysis || Prediction King 👑</b>
+       <p class="text-center">juldi join karo free joining for limited time 🕓 </p>
+    </div>
+    <script>
+        // Countdown Timer Functionality
+        function countdown() {
+            let seconds = 30;
+            const countdownElement = document.getElementById("countdown");
+            countdownElement.innerText = seconds;
+
+            const timer = setInterval(function () {
+                seconds--;
+                countdownElement.innerText = seconds;
+               
+                if (seconds <= 0) {
+                    seconds = 30;
+                }
+            }, 1000);
+        }
+
+        // Redirect to Telegram link
+
+        // Start the countdown on page load
+        window.onload = countdown;
+    </script>
+
+</body>
+
+</html>
